@@ -41,7 +41,8 @@ Si prefieres hacerlo manualmente:
    ```
 4. Si todo funciona correctamente, deberías ver un mensaje como este:
    ```bash
-   Servidor escuchando en 127.0.0.1:5000...
+  Escuchando en 127.0.0.1:5000
+  Conexión establecida con ('127.0.0.1', XXXXX)
    ```
 
 ---
@@ -59,8 +60,11 @@ Si prefieres hacerlo manualmente:
    ```
 4. Verás un mensaje indicando que el cliente está conectado y puedes escribir mensajes:
    ```bash
-   Conectado al servidor. Escribe un mensaje o 'DESCONEXION' para salir.
-   Cliente envía:
+   Conexión establecida...
+   Para desconectarte del servidor escribe 'DESCONEXION'.
+   Escribe un mensaje al servidor.
+   
+   Mensaje de 127.0.0.1:
    ```
 5. Ahora puedes escribir mensajes en el cliente y recibir respuestas del servidor.
 
@@ -75,12 +79,12 @@ Si prefieres hacerlo manualmente:
    ```
 2. El servidor deberá responder con el mensaje en mayúsculas:
    ```bash
-   Servidor responde: HOLA SERVIDOR
+   Respuesta del servidor: HOLA SERVIDOR
    ```
 3. En la terminal del **servidor**, verás:
    ```bash
    Conexión establecida con ('127.0.0.1', XXXXX)
-   Mensaje recibido: hola servidor
+   Cliente envía: hola servidor
    ```
 
 ### **Prueba 2: Desconectar el cliente**
@@ -90,11 +94,12 @@ Si prefieres hacerlo manualmente:
    ```
 2. Verás el mensaje:
    ```bash
-   Desconectando del servidor...
+   Servidor cierra la conexión con el cliente.
    ```
 3. En la terminal del **servidor**, verás:
    ```bash
-   Cliente ('127.0.0.1', XXXXX) se ha desconectado.
+   Cliente envía: DESCONEXION
+   El cliente ('127.0.0.1', 54251) se desconecto.
    ```
 
 ---
@@ -116,11 +121,8 @@ Si prefieres hacerlo manualmente:
 - Revisa que el **servidor esté ejecutándose** antes de iniciar el cliente.
 - Usa `127.0.0.1` y el mismo puerto en ambos scripts.
 
----
 
-## 🌟 Autor
-- **[Tu Nombre]**
 
-Si tienes dudas o mejoras, no dudes en contribuir al repositorio. ✨
+
 
 
