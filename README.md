@@ -15,7 +15,7 @@ Puedes descargar los archivos o clonarlos desde GitHub si ya están en un reposi
 
 Si tienes `git` instalado, usa:
 ```bash
- git clone https://github.com/usuario/repositorio.git
+ git clone https://github.com/YairBrito2022/TCP.git
  cd repositorio
 ```
 Si prefieres hacerlo manualmente:
